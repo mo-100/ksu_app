@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
             _buildInfoItem(
               context: context,
               icon: Icons.phone_outlined,
-              title: 'ؤقم الجوال',
+              title: 'رقم الجوال',
               value: profile.phone,
             ),
             _buildDivider(),

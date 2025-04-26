@@ -38,8 +38,17 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            const SizedBox(height: 8),
             Text(
-              "المعدل التراكمي : ${UserProfile.mockProfile().gpa}",
+              "المعدل التراكمي: ${UserProfile.mockProfile().gpa}",
+              style: TextStyle(
+                color: AppConstants.secondaryTextColor,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Text(
+              "الكلية: ${UserProfile.mockProfile().college}",
               style: TextStyle(
                 color: AppConstants.secondaryTextColor,
                 fontSize: 16,
@@ -60,7 +69,18 @@ class HomeScreen extends StatelessWidget {
             CategoryDivider(name: 'التقارير'),
 
             const SizedBox(height: 10),
+            
 
+            const Text(
+              "جدول الطالب",
+              style: TextStyle(
+                color: AppConstants.secondaryTextColor,
+                fontSize: 22,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Image.asset('assets/images/schedule2.jpg')
           ],
         ),
       ),
